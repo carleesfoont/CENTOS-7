@@ -1,3 +1,5 @@
+/* Inici.css */
+
 body {
     margin: 0;
     padding: 0;
@@ -6,6 +8,8 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
 }
 
 .navbar {
@@ -45,38 +49,75 @@ body {
     margin-top: 50px;
     margin-left: 450px;
 }
-.titulo{
+
+.titulo {
     margin: 0;
     padding: 0;
     font-family: 'Aquire', sans-serif;
-    font-size; 100px-large;
-   }
-
-.titol{
-    margin-top:150px;
-    margin-left: 450px;
+    font-size: 100px;  /* Corregido el error aquí, cambié '=' por ':' */
 }
 
-.most_viwed{
+.titol {
+    margin-top: 150px;
+    margin-left: 450px;
+    opacity: 0;
+    animation: slideInTitle 2s ease-in-out 0.5s forwards;
+}
+
+.most_viwed {
     background-color: rgb(30, 30, 30);
     color: #ecf0f1;
     margin-left: 100px;
     margin-top: 50px;
-     width: 400px;
+    width: 400px;
     height: 150px;
     border-radius: 10px;
+    opacity: 0;
+    animation: fadeInUpMostViewed 2s ease-in-out 1s forwards;
 }
-.card{
+
+.card {
     background-color: rgb(30, 30, 30);
     color: #ecf0f1;
 }
 
-.card-body{
+.card-body {
     color: #ecf0f1;
 }
 
-.card-img-top{
-     max-width: 100px;
-     max-height: 100px;
-     margin-left:  20px;
+.card-img-top {
+    max-width: 100px;
+    max-height: 100px;
+    margin-left: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInTitle {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUpMostViewed {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
