@@ -67,7 +67,10 @@ main {
 
 .titol{
     font-family: 'Aquire', sans-serif;
-    font-size; 100px-large;
+
+}
+.subtitol{
+    font-size: 26px;
 }
 .user-login {
    margin-left: 700px;
