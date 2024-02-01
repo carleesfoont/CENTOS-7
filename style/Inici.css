@@ -54,12 +54,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Aquire', sans-serif;
-    font-size: 6.25em;  /* Corregido el error aquí, cambié '=' por ':' */
+    font-size: 100px;  /* Corregido el error aquí, cambié '=' por ':' */
 }
 
 .titol {
-    margin-top: 9.375em;
-    margin-left: 28.125em;
+    margin-top: 150px;
+    margin-left: 450px;
     opacity: 0;
     animation: slideInTitle 2s ease-in-out 0.5s forwards;
 }
@@ -67,11 +67,11 @@ body {
 .most_viwed {
     background-color: rgb(30, 30, 30);
     color: #ecf0f1;
-    margin-left: 6.25em;
-    margin-top: 3.125em;
-    width: 25em;
-    height: 9.375em;
-    border-radius: 0.625em;
+    margin-left: 12.5%; /* 100px / 800px * 100 */
+    margin-top: 8.33%; /* 50px / 600px * 100 */
+    width: 50%; /* 400px / 800px * 100 */
+    height: 25%; /* 150px / 600px * 100 */
+    border-radius: 10px;
     opacity: 0;
     animation: fadeInUpMostViewed 2s ease-in-out 1s forwards;
 }
@@ -86,9 +86,9 @@ body {
 }
 
 .card-img-top {
-    max-width: 6.25em;
-    max-height: 6.25em;
-    margin-left: 1.25em;
+    max-width: 100px;
+    max-height: 100px;
+    margin-left: 20px;
 }
 
 @keyframes fadeIn {
