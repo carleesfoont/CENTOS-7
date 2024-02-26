@@ -9,7 +9,7 @@ body {
 }
 
 header, footer {
-    background-color: #333;
+    background-color: #333333;
     color: #fff;
     padding: 20px;
     display: flex;
@@ -38,6 +38,7 @@ nav ul li a, .user-options a {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s ease;
+    line-height: 30px;
 }
 
 nav ul li a:hover, .user-options a:hover {
@@ -72,15 +73,27 @@ main {
 .subtitol{
     font-size: 26px;
 }
-.user-login {
-   margin-left: 700px;
-   margin-top: 7px;
+.user-login a {
+    line-height: 43px;
+    margin-left: 30px;
+    color: grey;
+    text-decoration: none;
 }
 
-.user-register {
-   margin-left: 20px;
-   margin-top: 7px;
+.user-login a:hover {
+    color: rgb(255, 255, 255);
+  }
+
+.user-register a{
+    line-height: 43px;
+    margin-left: 700px;
+    color: grey;
+    text-decoration: none;
 }
+
+.user-register a:hover {
+    color: rgb(255, 255, 255);
+  }
 
 .titulo{
     font-size: 80px
@@ -90,3 +103,13 @@ main {
     max-width: 20%;
      max-height: 20%;
 }
+
+
+.Politicas a {
+    color: rgba(255, 255, 255, 0.317);
+    text-decoration: none;
+  }
+  
+.Politicas a:hover {
+    color: rgb(255, 255, 255);
+  }
